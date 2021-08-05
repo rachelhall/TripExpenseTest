@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportation Expenses</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header__container">
+      <h1 class="title">Trip Expense Calculator</h1>
+    </div>
+    <!-- Main -->
+    <div class="wrapper">
+    <!-- Form -->
+      <div class="form__container">
+        <!-- Vehicle Form -->
+        <form action="" method='POST' class='form form--vehicle'>
+          <h2>Vehicle Information</h2>
+            <ul class='form__list form__list--vehicle'>
+              <li class='form__list__item'>
+                <label for="" class='form__label'>MPG:</label>
+                <input type="number" class='form__input'>
+              </li>
+              <li class='form__list__item'>
+                <label for="" class='form__label'>Tank Size:</label>
+                <input type="number" class='form__input'>
+              </li>
+            </ul>
+        </form>
+        <!-- Location Form -->
+        <form action="" method='POST' class='form form--location'>
+          <h2>Locations</h2>
+          <ul class='form__list form__list--location'>
+            <li class='form__list__item'>
+              <input type="text" placeholder="Starting Location" class='form__input loc_input autocomplete'>
+            </li>
+            <li class='form__list__item'>
+              <input type="text" placeholder="Destination" class='form__input loc_input autocomplete'>
+            </li>
+          </ul>
+        </form>
+        <button class='form__btn'>Add Stop</button>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <script src="./layout.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XeMQd_E3LiNMGCQpnxonDrdb-lIEHfk&libraries=places&callback=initMap"></script>
+    <script defer src="./maps.js"></script>
+  </body>
+</html>
