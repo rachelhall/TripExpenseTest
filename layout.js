@@ -1,3 +1,5 @@
+console.log('testing github');
+
 const btn = document.querySelector('.form__btn');
 btn.addEventListener('click', newInput);
 
